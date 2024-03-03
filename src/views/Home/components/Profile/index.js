@@ -4,6 +4,8 @@ import withdraw from '@assets/img/withdraw.a41c76f1715915566d01.png'
 import account from '@assets/img/ac.6e82c2d8f893679d58fb.png'
 import { Link } from "react-router-dom"
 import numeral from "numeral"
+import support from "@services/support"
+let supportLink = await support.getSupportLink()
 
 const Button = props => {
   return (
@@ -25,7 +27,7 @@ const Profile = () => {
           <div className="amount text-light">{numeral(currentUser.accountBalance).format()}$</div>
         </div>
         <div className="d-flex justify-content-between">
-          <Button icon={deposit} label="Nạp tiền" to="/tai-khoan/nap-tien" />
+          <Button icon={deposit} label="Nạp tiền" to={supportLink} />
           <Button icon={withdraw} label="Rút tiền" to="/tai-khoan/rut-tien" />
           <Button icon={account} label="Tài khoản" to="/tai-khoan/thong-tin" />
         </div>
