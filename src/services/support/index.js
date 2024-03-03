@@ -5,7 +5,7 @@ const getSupportLink = async () => {
   let phone = ''
   let http = 'https://zalo.me/'
   const host = support.apiNodeSupport()
-  await axios.get(host + '/contacts').then(response => { phone = http + response.data[0].phone; })
+  await axios.get(host + '/contacts').then(response => { phone = response.data[0].phone; })
   return phone
 }
 
