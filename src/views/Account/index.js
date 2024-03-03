@@ -5,6 +5,7 @@ import numeral from "numeral"
 import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
+let supportLink = await support.getSupportLink()
 const Account = () => {
   const { currentUser } = useSelector(state => state.session)
 
@@ -54,7 +55,7 @@ const Account = () => {
         </div>
         <div className="row mt-3">
           <div className="col-6">
-            <a role="button" className="btn-deposit w-100" href={support.getSupportLink()}>Nạp tiền</a>
+            <a role="button" className="btn-deposit w-100" href={supportLink}>Nạp tiền</a>
           </div>
           <div className="col-6">
             <Link to="/tai-khoan/rut-tien" role="button" className="btn-withdraw w-100" >Rút tiền</Link>
