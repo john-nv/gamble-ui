@@ -29,7 +29,7 @@ let phone = await support.getSupportLink()
 const BottomNav = () => {
   return (
     <>
-      <div style={{ height: 200 }}></div>
+      <div style={{ height: 110 }}></div>
       <div className="bottom-nav  py-2">
 
         <div className="container d-flex justify-content-between">

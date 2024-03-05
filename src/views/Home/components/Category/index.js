@@ -97,11 +97,11 @@ const Category = () => {
           })
         })}
       </div>
-      <div style={{ height: 400 }}>
+      <div style={{ height: 500 }}>
         <img src={bgHome} style={{
           width: '100%',
           borderRadius: '0.375rem',
-          // height: '200px',
+          height: '100%',
           marginTop: '10px',
           marginBottom: '100px',
           backgroundSize: 'cover'
