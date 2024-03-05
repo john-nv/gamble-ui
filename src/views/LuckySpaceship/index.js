@@ -176,7 +176,7 @@ const Game = () => {
 
     return connection.start()
       .then(() => connection.invoke("JoinGame", gameId))
-      .then(() => toast.sucess('Chào mừng đến với Phi thuyền may mắn'))
+      .then(() => toast.sucess('Phi thuyền may mắn'))
       .then(() => setConnecteStatus(true))
   }
 

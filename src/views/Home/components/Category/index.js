@@ -8,6 +8,7 @@ import sentosa5 from '@assets/img/45.36dd88e459f576fea52e.png'
 import o11 from '@assets/img/6.f45183d305b4055e0491.png'
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
+import bgHome from '@assets/img/bg-home.jpg'
 
 const categories = [
   {
@@ -95,6 +96,16 @@ const Category = () => {
             )
           })
         })}
+      </div>
+      <div style={{ height: 400 }}>
+        <img src={bgHome} style={{
+          width: '100%',
+          borderRadius: '0.375rem',
+          // height: '200px',
+          marginTop: '10px',
+          marginBottom: '100px',
+          backgroundSize: 'cover'
+        }} />
       </div>
     </div>
   )
