@@ -34,7 +34,7 @@ const Bet = ({ chips, onChange, onCancel, value, loading, allowSubmit, waitingFo
                 return <Chip chipItem={item} key={idx} active={value?.id === item.id} onClick={() => onChange?.({ ...item })} />
               })}
             </div>
-            <div className=" d-flex justify-content-center">
+            <div className=" d-flex justify-content-center pb-3">
               <button className="btn btn-danger me-2 btn-sm" disabled={!_.some(bets)} type="reset" onClick={onCancel}>Huỷ</button>
               <AppButton className="btn btn-primary btn-sm" disabled={!_.some(bets)} loading={loading} type="submit">Xác nhận</AppButton>
             </div>
