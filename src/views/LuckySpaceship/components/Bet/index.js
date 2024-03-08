@@ -23,10 +23,10 @@ const Bet = ({ chips, onChange, onCancel, value, loading, allowSubmit, waitingFo
   return (
     <>
       <div style={{ height: 200 }}></div>
-      <div className="game-bet d-flex py-2">
-        <div className="container flex-fill d-flex justify-content-between">
-          <div className="flex-fill d-flex justify-content-between align-items-center">
-            <div className="flex-fill d-flex">
+      <div className="game-bet d-flex py-2 pb-5">
+        <div className="container flex-fill d-flex justify-content-center">
+          <div className="flex-fill justify-content-center align-items-center"> {/* d-flex  */}
+            <div className="flex-fill  d-flex justify-content-center">
               {_.map(items, (item, idx) => {
                 if (item.name === 'custom')
                   return <CustomChip chipItem={item} onChange={handleOnChangeCustomChip} chipSelected={value} />
@@ -34,7 +34,7 @@ const Bet = ({ chips, onChange, onCancel, value, loading, allowSubmit, waitingFo
                 return <Chip chipItem={item} key={idx} active={value?.id === item.id} onClick={() => onChange?.({ ...item })} />
               })}
             </div>
-            <div className=" d-flex justify-content-end">
+            <div className=" d-flex justify-content-center">
               <button className="btn btn-danger me-2 btn-sm" disabled={!_.some(bets)} type="reset" onClick={onCancel}>Huỷ</button>
               <AppButton className="btn btn-primary btn-sm" disabled={!_.some(bets)} loading={loading} type="submit">Xác nhận</AppButton>
             </div>
