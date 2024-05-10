@@ -41,9 +41,11 @@ const ProfileSponsor = () => {
             resize: 'none',
             width: '100%',
             height: '90%',
-            overflow: 'hidden',
+            overflowY: 'auto',
             color: 'white',
             outline: 'none',
+            scrollbarWidth: 'thin',
+            scrollbarColor: 'white transparent' 
           }}
           value={decodedProfileSupport}
           readOnly={true}

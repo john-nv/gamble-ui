@@ -36,16 +36,18 @@ const CenterAgency = () => {
           <PageTitle to="/tai-khoan/thong-tin" title="Trung tâm đại lý" />
         </div>
         <textarea
-          style={{
-            backgroundColor: 'transparent',
-            border: 'none',
-            resize: 'none',
-            width: '100%',
-            height: '90%',
-            overflow: 'hidden',
-            color: 'white',
-            outline: 'none',
-          }}
+            style={{
+              backgroundColor: 'transparent',
+              border: 'none',
+              resize: 'none',
+              width: '100%',
+              height: '90%',
+              overflowY: 'auto',
+              color: 'white',
+              outline: 'none',
+              scrollbarWidth: 'thin',
+              scrollbarColor: 'white transparent' 
+            }}
           value={decodedProfileSupport}
           readOnly={true}
         />
