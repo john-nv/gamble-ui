@@ -145,6 +145,12 @@ const Account = () => {
                 </Link>
               </li>
               <li className="section">
+                <Link to="/tai-khoan/so-dien-thoai" role="button" className="text-light d-flex justify-content-between align-items-center text-decoration-none">
+                  <span>Số điện thoại</span>
+                  <span><i className="fa-solid fa-chevron-right"></i></span>
+                </Link>
+              </li>
+              <li className="section">
                 <Link to="/tai-khoan/trung-tam-dai-ly" role="button" className="text-light d-flex justify-content-between align-items-center text-decoration-none">
                   <span>Trung tâm đại lý</span>
                   <span><i className="fa-solid fa-chevron-right"></i></span>

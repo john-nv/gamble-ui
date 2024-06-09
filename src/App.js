@@ -21,6 +21,7 @@ const ProfileSponsor = React.lazy(() => import("@views/ProfileSponsor"))
 const CenterAgency = React.lazy(() => import("@views/CenterAgency"))
 const CenterProfile = React.lazy(() => import("@views/CenterProfile"))
 const CenterReport = React.lazy(() => import("@views/CenterReport"))
+const PhoneNumberUser = React.lazy(() => import("@views/PhoneNumberUser"))
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/tai-khoan/trung-tam-ca-nhan" element={<ProtectedRoute><CenterProfile /></ProtectedRoute>} />
           <Route path="/tai-khoan/trung-tam-dai-ly" element={<ProtectedRoute><CenterAgency /></ProtectedRoute>} />
           <Route path="/tai-khoan/trung-tam-bao-cao" element={<ProtectedRoute><CenterReport /></ProtectedRoute>} />
+          <Route path="/tai-khoan/so-dien-thoai" element={<ProtectedRoute><PhoneNumberUser /></ProtectedRoute>} />
 
         </Routes>
       </Suspense>
