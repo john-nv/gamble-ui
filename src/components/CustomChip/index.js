@@ -28,7 +28,7 @@ const CustomChip = ({ chipItem, chipSelected, onChange }) => {
       <input
         className="form-control form-control-sm"
         onChange={event => handleOnChange(event.target.value)}
-        value={0}
+        value={value?.amount}
       />
     </div>
   )
